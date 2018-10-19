@@ -16,21 +16,34 @@
 
 <div class="container col-centered">
 	<div class="row">
-		
 	<div id="Box1" class="col-5 bg-success mt-5 mx-auto">
 		
+
+	<form>
 		<img id="img1" class="mb-1" src="img/player1.jpg" >
 
-		<input id="input1" class="mb-1" type="text" name="">
+		<input id="userInput"
+		class="input" type="text" placeholder="UserName:">
 
-		<button><span>Send</span></button>
+		<input id="commentInput" class=" input mb-1" type="text" placeholder="Comment:">
 
+		<button type="button" onclick="enterComment()"><span>Send</span></button>
+	</form>
 	</div>
+
+
+
 
 	<div class="col-1"></div>
 	
+
+
 	<div id="box2" class="col-5 bg-success mt-5 mx-auto">
-		<input id="input2" type="text" name="">
+		<!-- <input id="input2" type="text" name=""> -->
+	<ul id="commentList">
+	</ul>
+
+
 	</div>
 	
 
