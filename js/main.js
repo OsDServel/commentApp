@@ -1,14 +1,21 @@
 function enterComment(){
 
+//storing input values in variables
 	var user= document.getElementById("userInput").value
 	var comment= document.getElementById("commentInput").value
 
-	var name= document.createTextNode(user)
+//creating textnode for input values
+	var name= document.createTextNode("User: " + user + ",")
 	var text= document.createTextNode(comment)
+	// var userComment= "Username: " user;
 
+
+//creating elements to display, and break
 	var viewBox= document.createElement("li")
+	var br= document.createElement("br")
 
 	viewBox.appendChild(name)
+	viewBox.appendChild(br)
 	viewBox.appendChild(text)
 
 
@@ -18,9 +25,9 @@ function enterComment(){
 
 	document.getElementById("commentList").appendChild(viewBox)
 	
-	text.innerHTML= comment; //works
+	// text.innerHTML= name + text; //works
 
 //BOTTOM doesnt work... why?
-	// text.innerHTML= "Username: " user+ "says, " comment;
+	// text.innerHTML= "Username: " name + "says, " comment;
 
 }
